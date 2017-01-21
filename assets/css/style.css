@@ -1,0 +1,88 @@
+/** Body */
+body {
+	text-align: center;
+}
+
+/** Title */
+.appTitle{
+	
+}
+
+/** Create a task button */
+.createTaskButton {
+	width: 200px;
+}
+
+/**
+ * Task list
+ */
+#taskList {
+	width: 80%;
+	margin: auto;
+	text-align: justify;
+	margin-top: 15px;
+}
+
+#taskList td {
+	border-bottom: 1px lightgray solid;
+}
+
+#taskList .nameCell {
+	font-size: 16px;
+	font-weight: 400;
+	letter-spacing: 0.010em;
+	margin: 0 0 0px 0;
+	line-height: 1.2em;
+	overflow: hidden;
+	white-space: nowrap;
+	text-overflow: ellipsis;
+}
+
+#taskList .deleteCell {
+	text-align: right;
+	width: 88px;
+}
+
+#taskList .deleteCell span {
+	color: rgba(255,255,255,0.87);
+	background-color: rgb(63,81,181);
+	box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+	letter-spacing: 0.010em;
+	display: inline-block;
+	position: relative;
+	cursor: pointer;
+	min-height: 36px;
+	min-width: 88px;
+	line-height: 36px;
+	vertical-align: middle;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-grid-row-align: center;
+	align-items: center;
+	text-align: center;
+	border-radius: 3px;
+	box-sizing: border-box;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	outline: none;
+	border: 0;
+	padding: 0 6px;
+	margin: 6px 8px;
+	white-space: nowrap;
+	text-transform: uppercase;
+	font-weight: 500;
+	font-size: 14px;
+	font-style: inherit;
+	font-variant: inherit;
+	font-family: inherit;
+	text-decoration: none;
+	overflow: hidden;
+	-webkit-transition: box-shadow 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), background-color 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+	transition: box-shadow 0.4s cubic-bezier(0.25, 0.8, 0.25, 1), background-color 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+}
+
+#TaskList .deleteCell span:active {
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+}

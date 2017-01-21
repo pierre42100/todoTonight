@@ -1,0 +1,67 @@
+<!--
+    TODO Apple for iOS
+    
+    (c) Pierre HUBERT
+-->
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- App title -->
+        <title>TODO tonight app</title>
+
+        <!-- iOS integration -->
+        <link rel="apple-touch-icon-precomposed" href="assets/img/icon.png">
+        <link rel="apple-touch-startup-image" href="assets/img/icon.png">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="default">
+        <meta name="viewport" content="initial-scale=1.0, maximum-scale=1.0, user-scalable=0, minimal-ui">
+
+        <!-- Encoding -->
+        <meta charset="UTF-8">
+
+        <!-- Google stylesheet -->
+        <link rel="stylesheet" href="assets/google/googleApis/css.css">
+        <link rel="stylesheet" href='assets/google/angular-material/v1.1.1/angular-material.css'>
+        <link rel="stylesheet" href='assets/google/angular-material/v1.1.1/docs.css'>
+
+        <!-- Project style sheet -->
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+    <body>
+        <!-- Core content -->
+        <div ng-controller="AppCtrl" ng-cloak="" ng-app="MyApp">
+        
+            <!-- App title -->
+            <h1 class="appTitle">Todo tonight app</h1>
+
+            <!-- Create a new task -->
+            <md-button class="md-primary md-raised createTaskButton" ng-click="createTask($event)">
+                Create a new task
+            </md-button>
+
+            <!-- Tasks list -->
+            <table id="taskList">
+                <tr>
+                    <td> TaskName </td>
+                    <td>Delete</td>
+                </tr>
+            </table>
+
+        </div>
+
+        <!-- Google JS files -->
+        <script src='assets/google/angularjs-1.5.5/angular.js'></script>
+        <script src='assets/google/angularjs-1.5.5/angular-animate.min.js'></script>
+        <script src='assets/google/angularjs-1.5.5/angular-route.min.js'></script>
+        <script src='assets/google/angularjs-1.5.5/angular-aria.min.js'></script>
+        <script src='assets/google/angularjs-1.5.5/angular-messages.min.js'></script>
+        <script src='assets/google/s.cdpn.io/svg-assets-cache.js'></script>
+        <script src='assets/google/angular-material/v1.1.1/angular-material.js'></script>
+
+        <!-- App scripts -->
+        <script src="assets/js/task.js"></script>
+        <script src="assets/js/taskViewer.js"></script>
+        <script src="assets/js/index.js"></script>
+
+    </body>
+</html>
